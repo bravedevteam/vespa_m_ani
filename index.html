@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <!-- 공통 meta -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <meta property="og:image" content="">
+    <meta name="subject" content="KING's RAID">
+    <meta name="title" content="KING's RAID">
+    <meta name="author" content="KING's RAID">
+    <meta name="keywords" content="킹스레이드,베스파,애니메이션,킹스,수집형,RPG,킹레,RPG,레이드,캐릭터">
+    <meta name="description" content="어디에도 없던 고유의 세계관과 수많은 캐릭터들 각자의 이야기가 펼쳐지는 「킹스레이드」에서 차별화된 재미를 경험해 보세요!" />
+    <meta property="og:title" content="KING's RAID" />
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="http://www.kingsraid.com"/>
+    <meta property="og:image" content="http://www.kingsraid.com/resources/images/sns_img.jpg?v=01" />
+    <meta property="og:description" content="" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="KING's RAID" />
+    <meta name="twitter:description" content="" />
+    <meta name="twitter:image" content="http://www.kingsraid.com/resources/images/sns_img.jpg?v=01" />
+    <link rel="shortcut icon" href="https://www.kingsraid.com/resources/images/favicon2.png">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/common.css">
+    <title>KING's RAID</title>
+</head>
+<body>
+    <div id="skrollr-body">
+        <header>
+            <div class="burger">
+                <a class="menu-trigger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+        </header>
+        <div class="nav">
+            <div class="lnb">
+                <div class="lnb_menu">
+                    <div class="tit_wrap"><a class="btn_tit on btn_main">메인</a></div>
+                    <div class="tit_wrap">
+                        <a class="btn_tit btn_game_info">게임소개</a>
+                        <ul class="list_menu">
+                            <li class="underline"><a class="btn_txt synop">시놉시스</a></li>
+                            <li class="underline"><a class="btn_txt btn_onair">온에어</a></li>
+                            <li class="underline"><a class="btn_txt btn_char">캐릭터</a></li>
+                            <li class="underline"><a class="btn_txt btn_staff">스텝</a></li>
+                            <li class="underline"><a class="btn_txt btn_music">뮤직</a></li>
+                        </ul>
+                    </div>
+                    <div class="tit_wrap">
+                        <a class="btn_tit btn_down_move">다운로드</a>
+                    </div>
+                    <div class="tit_wrap community">
+                        <a href="/" target="_blank">
+                            공식커뮤니티<img src="images/btn_comunity.png" alt="공식커뮤니티 바로가기" />
+                        </a>
+                    </div>
+                    <div class="btn_close">
+                        <img src="images/ico_close_black.png" alt="menu close" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="mask"></div>
+        <section>
+            <div class="chapter chapter1">
+                <div class="chapter1_logo"></div>
+                <div class="chapter1_tit1"></div>
+                <div class="chapter1_tit_sub">
+                    <p class="fs_1_25">1,500만이 열광한 그 스토리<br /><span>TV 애니메이션<br />킹스레이드 : 의지를 잇는 자들</span></p>
+                </div>
+                <div class="chap1_video_sub"></div>
+                <div class="chap1_detail"><!-- on air로 이동--></div>
+                <div class="chap1_video">
+                    <video data-keepplaying="" class="lazyVideo mainFullVideo" poster="https://d2mnoz07ua7r8n.cloudfront.net/resources/images/poster.jpg" autoplay="" muted="" loop="" playsinline="">
+                        <source class="" src="https://d2mnoz07ua7r8n.cloudfront.net/resources/images/main.mp4?v=01" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <!-- // chapter1 -->
+        </section>
+    </div>
+    <!-- 공통 -->
+    <script src="js/jquery.js"></script>
+    <script src="js/skrollr.min.js"></script>
+    <script src="js/ui.js"></script>
+    <script type="text/javascript">
+        console.log($(window).scrollTop());
+        skrollr.init({
+        forceHeight: false,
+        mobileCheck: function(){
+                    if((/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
+                        // mobile device
+                }
+            }
+        });
+    </script>
+</body>
+</html>
