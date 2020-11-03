@@ -3,7 +3,7 @@
 <head>
   <!-- 공통 meta -->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, user-scalable=0, viewport-fit=cover">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
     <meta property="og:image" content="">
     <meta name="subject" content="KING's RAID">
@@ -24,6 +24,9 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap" rel="stylesheet">
     <title>KING's RAID</title>
 </head>
 <body>
@@ -40,7 +43,7 @@
         <div class="nav">
             <div class="lnb">
                 <div class="lnb_menu">
-                    <div class="tit_wrap"><a class="btn_tit on btn_main">메인</a></div>
+                    <div class="tit_wrap"><a class="btn_tit btn_main">메인</a></div>
                     <div class="tit_wrap">
                         <a class="btn_tit btn_game_info">게임소개</a>
                         <ul class="list_menu">
@@ -67,7 +70,7 @@
         </div>
         <div id="mask"></div>
         <section>
-            <div class="chapter chapter1">
+            <div class="chapter chapter1" id="chapter1">
                 <div class="chapter1_logo"></div>
                 <div class="chapter1_tit1"></div>
                 <div class="chapter1_tit_sub">
@@ -80,14 +83,741 @@
                         <source class="" src="https://d2mnoz07ua7r8n.cloudfront.net/resources/images/main.mp4?v=01" type="video/mp4">
                     </video>
                 </div>
+                <div class="chap1_video_sub_show">
+                    <div><img src="images/btn_chap1_sub_video_close.png" alt="영상닫기" /></div>
+                    <video data-keepplaying="" class="lazyVideo mainFullVideo" poster="https://d2mnoz07ua7r8n.cloudfront.net/resources/images/poster.jpg" autoplay="" muted="" loop="" playsinline="" style="width:100%;height:100%">
+                        <source class="" src="https://d2mnoz07ua7r8n.cloudfront.net/resources/images/main.mp4?v=01" type="video/mp4">
+                    </video>
+                </div>
+                <div id="mask_chap1"></div>
             </div>
             <!-- // chapter1 -->
+            <!-- chapter2 -->
+            <div class="chapter chapter2">
+                <div class="chap2_visual">
+                    <div class="chap2_tit"><img src="images/img_chap2_visual_top.png" alt="TV애니메이션 킹스레이드 : 의지를 잇는 자들" /></div>
+                    <div class="chap2_video">
+                        <div class="chap2_sub_video_btn"><img src="images/btn_chap2_sub_video.png" alt="영상닫기" /></div>
+                        <video data-keepplaying="" class="lazyVideo mainFullVideo" poster="https://d2mnoz07ua7r8n.cloudfront.net/resources/images/poster.jpg" autoplay="" muted="" loop="" playsinline="" style="width:100%;height:100%">
+                            <source class="" src="https://d2mnoz07ua7r8n.cloudfront.net/resources/images/main.mp4?v=01" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="chap2_content">
+                    <div class="chap2_story1">
+                        <p>빛의 여신 &lt루아&gt가 창조한 세계의 절반 이상을 차지하는
+                            광활한 오르비스 대륙. 인간뿐만 아니라 다양한 종족이
+                            살고있는 장소이다.<br />
+                            본 작품의 무대인 &lt오르벨리아 왕국&gt 오르벨리아 왕국은
+                            100년 전에 마계에서 나타난 마왕&lt앙그문드&gt의 침공으로부터
+                            비롯된 전쟁에서 성검 에아와 함께 파죽지세의 활약을 보인
+                            국왕 카일을 배출한 나라이다. 
+                        </p>
+                        <p>카일은 각 종족의 동료와 함께 마왕 군에 저항. <br />
+                            마침내 앙그문드를 쓰러뜨리지만,<br />
+                            자기 자신도 결전의 현장에서 생사 불명이 된다.
+                        </p>
+                    </div>
+                    <div class="chap2_bg">
+                        <div><img src="images/img_chap2_story.png" alt="" /></div>
+                    </div>
+                    <div class="chap2_story2">
+                        <p>카일 왕이 마왕 앙그문드를 쓰러뜨린지 100년 후,<br />
+                            오르벨리아 왕국의 평화로운 시대에 수습기사 카셀은 살고 있었다.<br />
+                            하지만 마족이 인근에 나타났다는 소식으로부터,<br />
+                            카셀의 운명이 움직이기 시작한다.<br />
+                            대현자에게 이끌려 의지할 동료를 얻은 카셀은 여행을 떠난다.<br />
+                            봉인된 성검을 찾아서…
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- //chapter2 -->
+            <!-- chapter3 -->
+            <div class="chapter chapter3">
+                <div class="chapter3_tit">
+                    <div>
+                        <h2>ON AIR</h2>
+                    </div>
+                    <div>
+                        <span class="chap3_tit_on"><img src="images/btn_chap3_list_on.png" alt="" /></span>
+                        <span>회차정보</span>
+                    </div>
+                </div>
+                <div class="chap3_table">
+                    <table>
+                        <colgroup>
+                            <col width="33%" />
+                            <col width="33%" />
+                            <col width="33%" />
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>방송사</th>
+                                <th>방송일</th>
+                                <th>방송시간</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>애니플러스</td>
+                                <td>20.10.03<br />(매주 토요일) ~ 20.10.05<br />(매주 월요일) ~</td>
+                                <td>AM 02:30 ~<br />AM 00:30 ~</td>
+                            </tr>
+                            <tr>
+                                <td>BTV(Sk)</td>
+                                <td>20.10.05<br />(매주 월요일) ~</td>
+                                <td>AM 08:00</td>
+                            </tr>
+                            <tr>
+                                <td>olleh TV(KT)</td>
+                                <td>20.10.05<br />(매주 월요일) ~</td>
+                                <td>AM 08:00</td>
+                            </tr> 
+                            <tr>
+                                <td>U+tv(LG)</td>
+                                <td>20.10.05<br />(매주 월요일) ~</td>
+                                <td>AM 08:00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table_visible" style="display:none">
+                        <tr>
+                            <td>Homechoice</td>
+                            <td>20.10.05<br />(매주 월요일) ~</td>
+                            <td>AM 08:00</td>
+                        </tr>
+                        <tr>
+                            <td>skylife</td>
+                            <td>20.10.05<br />(매주 월요일) ~</td>
+                            <td>AM 08:00</td>
+                        </tr>
+                        <tr>
+                            <td>Naver Series</td>
+                            <td>20.10.05<br />(매주 월요일) ~</td>
+                            <td>AM 08:00</td>
+                        </tr>
+                        <tr>
+                            <td>LAFTEL</td>
+                            <td>20.10.05<br />(매주 월요일) ~</td>
+                            <td>AM 08:00</td>
+                        </tr>
+                        <tr>
+                            <td>ANIPLUS</td>
+                            <td>20.10.05<br />(매주 월요일) ~</td>
+                            <td>AM 08:00</td>
+                        </tr>
+                        <tr>
+                            <td>Yes24</td>
+                            <td>20.10.05<br />(매주 월요일) ~</td>
+                            <td>AM 08:00</td>
+                        </tr>
+                        <tr>
+                            <td>곰TV</td>
+                            <td>20.10.05<br />(매주 월요일) ~</td>
+                            <td>AM 08:00</td>
+                        </tr>
+                        <tr>
+                            <td>Tving</td>
+                            <td>20.10.05<br />(매주 월요일) ~</td>
+                            <td>AM 08:00</td>
+                        </tr>
+                        <tr>
+                            <td>카카오페이지</td>
+                            <td>20.10.05<br />(매주 월요일) ~</td>
+                            <td>AM 08:00</td>
+                        </tr>
+                        <tr>
+                            <td>JBOX</td>
+                            <td>20.10.05<br />(매주 월요일) ~</td>
+                            <td>AM 08:00</td>
+                        </tr>
+                        <tr>
+                            <td>위디스크</td>
+                            <td>20.10.05<br />(매주 월요일) ~</td>
+                            <td>AM 08:00</td>
+                        </tr>
+                        <tr>
+                            <td>파일노리</td>
+                            <td>20.10.05<br />(매주 월요일) ~</td>
+                            <td>AM 08:00</td>
+                        </tr>
+                        <tr>
+                            <td>예스파일</td>
+                            <td>20.10.05<br />(매주 월요일) ~</td>
+                            <td>AM 08:00</td>
+                        </tr>
+                        <tr>
+                            <td>애플파일</td>
+                            <td>20.10.05<br />(매주 월요일) ~</td>
+                            <td>AM 08:00</td>
+                        </tr>
+                        <tr>
+                            <td>파일조</td>
+                            <td>20.10.05<br />(매주 월요일) ~</td>
+                            <td>AM 08:00</td>
+                        </tr>
+                        <tr>
+                            <td>온디스크</td>
+                            <td>20.10.05<br />(매주 월요일) ~</td>
+                            <td>AM 08:00</td>
+                        </tr>
+                        <tr>
+                            <td>케이디스크</td>
+                            <td>20.10.05<br />(매주 월요일) ~</td>
+                            <td>AM 08:00</td>
+                        </tr>
+                        <tr>
+                            <td>파일구리</td>
+                            <td>20.10.05<br />(매주 월요일) ~</td>
+                            <td>AM 08:00</td>
+                        </tr>
+                        <tr>
+                            <td>피디팝</td>
+                            <td>20.10.05<br />(매주 월요일) ~</td>
+                            <td>AM 08:00</td>
+                        </tr>
+                        <tr>
+                            <td>스마트파일</td>
+                            <td>20.10.05<br />(매주 월요일) ~</td>
+                            <td>AM 08:00</td>
+                        </tr>
+                        <tr>
+                            <td>미투디스크</td>
+                            <td>20.10.05<br />(매주 월요일) ~</td>
+                            <td>AM 08:00</td>
+                        </tr>
+                        <tr>
+                            <td>쉐어박스</td>
+                            <td>20.10.05<br />(매주 월요일) ~</td>
+                            <td>AM 08:00</td>
+                        </tr>
+                        <tr>
+                            <td>파일함</td>
+                            <td>20.10.05<br />(매주 월요일) ~</td>
+                            <td>AM 08:00</td>
+                        </tr>
+                        <tr>
+                            <td>파일시티</td>
+                            <td>20.10.05<br />(매주 월요일) ~</td>
+                            <td>AM 08:00</td>
+                        </tr>
+                        <tr>
+                            <td>메가파일</td>
+                            <td>20.10.05<br />(매주 월요일) ~</td>
+                            <td>AM 08:00</td>
+                        </tr>
+                        <tr>
+                            <td>티플</td>
+                            <td>20.10.05<br />(매주 월요일) ~</td>
+                            <td>AM 08:00</td>
+                        </tr>
+                        <tr>
+                            <td>파일캐스트</td>
+                            <td>20.10.05<br />(매주 월요일) ~</td>
+                            <td>AM 08:00</td>
+                        </tr>
+                        <tr>
+                            <td>빅파일</td>
+                            <td>20.10.05<br />(매주 월요일) ~</td>
+                            <td>AM 08:00</td>
+                        </tr>
+                        <tr>
+                            <td>토토디스크</td>
+                            <td>20.10.05<br />(매주 월요일) ~</td>
+                            <td>AM 08:00</td>
+                        </tr>
+                        <tr>
+                            <td>파일혼</td>
+                            <td>20.10.05<br />(매주 월요일) ~</td>
+                            <td>AM 08:00</td>
+                        </tr>
+                        <tr>
+                            <td>지파일</td>
+                            <td>20.10.05<br />(매주 월요일) ~</td>
+                            <td>AM 08:00</td>
+                        </tr>
+                        <tr>
+                            <td>넷파일</td>
+                            <td>20.10.05<br />(매주 월요일) ~</td>
+                            <td>AM 08:00</td>
+                        </tr>
+                        <tr>
+                            <td>파일쿠키</td>
+                            <td>20.10.05<br />(매주 월요일) ~</td>
+                            <td>AM 08:00</td>
+                        </tr>
+                        <tr>
+                            <td>따오기</td>
+                            <td>20.10.05<br />(매주 월요일) ~</td>
+                            <td>AM 08:00</td>
+                        </tr>
+                        <tr>
+                            <td>큐다운</td>
+                            <td>20.10.05<br />(매주 월요일) ~</td>
+                            <td>AM 08:00</td>
+                        </tr>
+                        <tr>
+                            <td>파일투어</td>
+                            <td>20.10.05<br />(매주 월요일) ~</td>
+                            <td>AM 08:00</td>
+                        </tr>
+                        <tr>
+                            <td>토마토팡/알파일</td>
+                            <td>20.10.05<br />(매주 월요일) ~</td>
+                            <td>AM 08:00</td>
+                        </tr>
+                        <tr>
+                            <td>오렌지파일P2P</td>
+                            <td>20.10.05<br />(매주 월요일) ~</td>
+                            <td>AM 08:00</td>
+                        </tr>
+                        <tr>
+                            <td>투디스크</td>
+                            <td>20.10.05<br />(매주 월요일) ~</td>
+                            <td>AM 08:00</td>
+                        </tr>
+                        <tr>
+                            <td>파일콕</td>
+                            <td>20.10.05<br />(매주 월요일) ~</td>
+                            <td>AM 08:00</td>
+                        </tr>
+                        <tr>
+                            <td>클럽넥스</td>
+                            <td>20.10.05<br />(매주 월요일) ~</td>
+                            <td>AM 08:00</td>
+                        </tr>
+                        <tr>
+                            <td>파일론</td>
+                            <td>20.10.05<br />(매주 월요일) ~</td>
+                            <td>AM 08:00</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="btn_chapter3_table_open">
+                    <img src="images/btn_chapter3_table_open.png" alt="" />
+                </div>
+                <div class="chap3_pop">
+                    <div class="chap3_pop_menu">
+                        <div>
+                            <ul>
+                                <li><a href="#" target="_blank">netflix</a></li>
+                                <li><a href="#" target="_blank">watcha</a></li>
+                                <li><a href="#" target="_blank">pooq</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <select>
+                                <option>시즌1</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="chap3_pop_list">
+                        <dl>
+                            <dt><img src="images/img_chap3_pop_list.png" alt="" /><span>1화<br />달밤에 우글대는 마물들</span></dt>
+                            <dd>
+                                인간국가 오르벨리아의 왕 카일에 의해 마왕 앙그문드가 쓰러진지 100년. 수호기사단에 소속된 수습기사 카셀은
+                                소중한 사람들을 모두 지킬 수 있는 기사가 되기 위해 선배 클라우스에게 가르침을 받으며 하루하루 수련을 이어간다.
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt><img src="images/img_chap3_pop_list.png" alt="" /><span>1화<br />달밤에 우글대는 마물들</span></dt>
+                            <dd>
+                                인간국가 오르벨리아의 왕 카일에 의해 마왕 앙그문드가 쓰러진지 100년. 수호기사단에 소속된 수습기사 카셀은
+                                소중한 사람들을 모두 지킬 수 있는 기사가 되기 위해 선배 클라우스에게 가르침을 받으며 하루하루 수련을 이어간다.
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt><img src="images/img_chap3_pop_list.png" alt="" /><span>1화<br />달밤에 우글대는 마물들</span></dt>
+                            <dd>
+                                인간국가 오르벨리아의 왕 카일에 의해 마왕 앙그문드가 쓰러진지 100년. 수호기사단에 소속된 수습기사 카셀은
+                                소중한 사람들을 모두 지킬 수 있는 기사가 되기 위해 선배 클라우스에게 가르침을 받으며 하루하루 수련을 이어간다.
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="chap3_pop_close_btn">
+                        <img src="images/btn_chap3_pop_close.png" alt="popup_close" />
+                    </div>
+                </div>
+                <div id="mask"></div>
+            </div>
+            <!-- chapter3 -->
+            <!-- chapter4 -->
+            <div class="chapter chapter4">
+                <h2>CHARACTERS</h2>
+                <div class="chap4_tab_wrap">
+                    <ul class="tabs">
+                        <li ><a class="on" rel="tab1">주요인물</a></li>
+                        <li ><a rel="tab2">오르벨 왕국 수호 기사단</a></li>
+                        <li ><a rel="tab3">블랙엣지</a></li>
+                        <li ><a rel="tab4">그 외</a></li>
+                    </ul>
+                </div>
+                <div class="tab_wrap tab1 tab_content" id="tab1">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div><img src="images/img_chap4_char1.png" alt="" /></div>
+                                <div class="chap4_char_info">
+                                    <h3>카셀</h3>
+                                    <div class="chap4_char_info_voice"><span>성우</span>이시카와 카이토 (石川　界人)</div>
+                                    <div>
+                                        오르벨리아 왕국의 수습 기사.
+                                        모두를 지키는 강한 기사가 되기 위해 매일 수련을 거듭하고 있다.
+                                        어린 시절을 프레이, 클라우스와 같은 시설에서 보냈으며
+                                        가족처럼 생각한다. 어느 날 원정대에 참가했던 클라우스가
+                                        돌아오지 않자, 형처럼 따르던 클라우스를 구하기 위해
+                                        카셀은 길을 떠나기로 결심한다.
+                                        <img src="images/img_chap4_char1_sub.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div><img src="images/img_chap4_char2.png" alt="" /></div>
+                                <div class="chap4_char_info">
+                                    <h3>프레이</h3>
+                                    <div class="chap4_char_info_voice"><span>성우</span>카쿠마 아이 (加隈　亜衣)</div>
+                                    <div>
+                                        여신 루아를 섬기는 신관이며 클라우스, 카셀과 같은 시설 출신이다.
+                                        그녀는 신관이 되는 길을 운명으로 여겼고, 그 다정한 마음이
+                                        신관으로서의 결의를 반영하고 있다.
+                                        클라우스를 찾기 위해 떠나는 카셀을 걱정하며 함께 여행을 떠난다.
+                                        <img src="images/img_chap4_char2_sub.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div><img src="images/img_chap4_char3.png" alt="" /></div>
+                                <div class="chap4_char_info">
+                                    <h3>클레오</h3>
+                                    <div class="chap4_char_info_voice"><span>성우</span>오자와 아리 (小澤　亜李)</div>
+                                    <div>
+                                        현자의 탑의 마법사. 대현자 도미닉스 밑에서 자란 그녀는,
+                                        마법의 천재지만 현자의 탑 밖에서 지내본 적이 거의 없어
+                                        매번 말썽을 일으키는 문제아이다.
+                                        대현자 도미닉스의 지시로 카셀들과 함께 길을 떠난다.
+                                        책에서나 보던 바깥세상에 대한 기대에 차있다.
+                                        <img src="images/img_chap4_char3_sub.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div><img src="images/img_chap4_char4.png" alt="" /></div>
+                                <div class="chap4_char_info">
+                                    <h3>로이</h3>
+                                    <div class="chap4_char_info_voice"><span>성우</span>카와니시 켄고 (河西　健吾)</div>
+                                    <div>
+                                        대현자 도미닉스의 부탁으로 클레오의 호위를 맡은 남자.
+                                        예전에는 암살자 무리에 속해 있었지만, 어떤 이유로 위험을 무릅쓰고
+                                        단체에서 벗어나 과거를 숨기고 산다.
+                                        냉정하면서도 주변 사람들을 잘 관찰하고 잘 챙기는 성격.
+                                        <img src="images/img_chap4_char4_sub.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+                <div class="tab_wrap tab2 tab_content" id="tab2">
+                    <div class="swiper-container1">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div><img src="images/img_chap4_char5.png" alt="" /></div>
+                                <div class="chap4_char_info">
+                                    <h3>스칼렛</h3>
+                                    <div class="chap4_char_info_voice"><span>성우</span>나카에 미츠키 (中恵 光城)</div>
+                                    <div>
+                                        오르벨리아 현 국왕의 외동딸이자 기사단의 총사령관.
+                                        공주이지만, 직접 전장에 나설 만큼 용기가 있으며, 검 실력도 뛰어나다.
+                                        병든 현 국왕을 대신해, 백성과 나라를 지키기 위해 노력하고,
+                                        출신과 신분에 관계없이 실력 있는 사람을 기용하는 등,
+                                        훌륭한 지도자로서의 면모를 보이고 있다.
+                                        <img src="images/img_chap4_char5_sub.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div><img src="images/img_chap4_char6.png" alt="" /></div>
+                                <div class="chap4_char_info">
+                                    <h3>데미아</h3>
+                                    <div class="chap4_char_info_voice"><span>성우</span>칸다 미카 (神田 みか)</div>
+                                    <div>
+                                        오르벨리아 수호기사단을 지휘하는 귀족 출신 여기사.
+                                        힘과 위엄을 갖춘 기사이며 육중한 창과 거대한 방패를 다루는 그녀는
+                                        지휘관으로서의 긍지를 가지고 있으며 오르벨리아 왕국과
+                                        스칼렛 공주를 위해서라면 어떤 임무든 해낼 각오가 대단하다.
+                                        <img src="images/img_chap4_char6_sub.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div><img src="images/img_chap4_char7.png" alt="" /></div>
+                                <div class="chap4_char_info">
+                                    <h3>클라우스</h3>
+                                    <div class="chap4_char_info_voice"><span>성우</span>테라시마 타쿠마(寺島 拓篤)</div>
+                                    <div>
+                                        기사로서 오르벨리아를 지키는 정의감 넘치는 올곧은 사내.
+                                        수호기사단의 일원으로서 나라를 지키는 그 정의감과 실력에 많은
+                                        이들의 호평을 받고 있다. 카셀과 프레이는 같은 시설에서 자라
+                                        가족처럼 생각하고 있다. 오르벨리아 근처의 왕의 숲에서 100년 전
+                                        사라졌다던 마족이 출현해 조사단의 일원으로서 출정하는데…
+                                        <img src="images/img_chap4_char7_sub.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+                <div class="tab_wrap tab3 tab_content" id="tab3">
+                    <div class="swiper-container2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div><img src="images/img_chap4_char8.png" alt="" /></div>
+                                <div class="chap4_char_info">
+                                    <h3>리히트</h3>
+                                    <div class="chap4_char_info_voice"><span>성우</span>스즈키 료타 (鈴木 凌汰)</div>
+                                    <div>
+                                        다크엘프의 강자들로 구성된 블랙엣지의 리더적 존재. 혼자서 백의
+                                        적을 상대하는 수완의 소유자이며, 블랙엣지의 멤버와 함께 고용된
+                                        용병으로 오르벨리아에 힘을 보태게 된다. 하지만 내심 다크엘프를
+                                        괴롭히고 부모를 죽인 오르벨리아 인간들에 대한 강한 증오를 품고
+                                        복수를 노리고 있다.
+                                        <img src="images/img_chap4_char8_sub.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div><img src="images/img_chap4_char9.png" alt="" /></div>
+                                <div class="chap4_char_info">
+                                    <h3>리피네</h3>
+                                    <div class="chap4_char_info_voice"><span>성우</span>난죠 요시노 (南條 愛乃)</div>
+                                    <div>
+                                        리히트의 여동생이고 블랙엣지 소속이다.
+                                        오르벨리아 병사들에게 부모를 살해당한 경험이 있어,
+                                        오빠 리히트와 함께 복수를 다짐한다. 자신의 행복보다,
+                                        오빠에게 도움이 되는 것을 무엇보다도 우선시하고 있다.
+                                        블랙엣지 중에서도 누구보다 오르벨리아에 증오를 품고 있고,
+                                        다크엘프를 학대해 온 인간들을 복종시키는 것이 소원이다.
+                                        <img src="images/img_chap4_char9_sub.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div><img src="images/img_chap4_char10.png" alt="" /></div>
+                                <div class="chap4_char_info">
+                                    <h3>탐 아즈라 즈카</h3>
+                                    <div class="chap4_char_info_voice"><span>성우</span>타도코로 히나타(田所 陽向)</div>
+                                    <div>
+                                        리히트, 리피네와 같이 블랙엣지에 소속된 다크엘프의 3인조.
+                                        감정적이지만 붙임성이 좋고 무드메이커이기도 한 아자르.
+                                        말수는 적지만 냉정한 대응으로 모두를 지키는 즈카. 활발한 소년 탐.
+                                        이들 3명도 다크엘프의 박해에 시달려 왔으며,
+                                        리히트와 함께 세상을 바꾸려고 싸우고 있다.
+                                        <img src="images/img_chap4_char10_sub.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+                <div class="chap4_visual">
+                    <div class="chap4_video">
+                        <div class="chap2_sub_video_btn"><img src="images/btn_chap2_sub_video.png" alt="영상닫기"></div>
+                        <video data-keepplaying="" class="lazyVideo mainFullVideo" poster="https://d2mnoz07ua7r8n.cloudfront.net/resources/images/poster.jpg" autoplay="" muted="" loop="" playsinline="" style="width:100%;height:100%">
+                            <source class="" src="https://d2mnoz07ua7r8n.cloudfront.net/resources/images/main.mp4?v=01" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+            <!-- chapter4 -->
+            <!-- chapter5 -->
+            <div class="chapter chapter5">
+                <h2>STAFF</h2>
+                <div class="chap5_tab_wrap">
+                    <ul class="tabs_chap5">
+                        <li class="on" rel="tab1_chap5">STAFF</li>
+                        <li rel="tab2_chap5">CAST</li>
+                    </ul>
+                </div>
+                <div class="tab_wrap tab1 tab_content_chap5" id="tab1_chap5">
+                    <ul>
+                        <li>원작：VESPA</li>
+                        <li>감독：호시노 마코토 (星野 真)</li>
+                        <li>시리즈 구성：시미즈 메구미 (清水 恵)</li>
+                        <li>캐릭터 디자인, 총작화감독：아라이 타츠야 (新井 達也)</li>
+                        <li>몬스터 디자인 : 요시야마 유우 (芳山 優)</li>
+                        <li>미술감독：이케다 시게미 (池田 繁美) /
+                                        마루야마 유키코 (丸山 由紀子)</li>
+                        <li>색채설계：코지마 마키코 (小島 真喜子)</li>
+                        <li> 촬영감독：히로오카 타케 (廣岡 岳)</li>
+                        <li>편집：와타나베 나오키 (渡辺 直樹)</li>
+                        <li>음악：토쿠다 마사히로(得田 真裕)</li>
+                        <li>음향감독：하마노 타카토시(濱野 高年)</li>
+                        <li>애니메이션 제작：OLM×SUNRISE BEYOND</li>
+                        <li>제작 : 킹스레이드 제작위원회</li>
+                    </ul>
+                </div>
+                <div class="tab_wrap tab2 tab_content_chap5" id="tab2_chap5">
+                    <h3>주요 인물</h3>
+                    <ul>
+                        <li>카셀：이시카와 카이토 (石川　界人) </li>
+                        <li>프레이：카쿠마 아이 (加隈　亜衣) </li>
+                        <li>클레오：오자와 아리 (小澤　亜李) </li>
+                        <li>로이：카와니시 켄고 (河西　健吾) </li>
+                    </ul>
+                    <h3>오르벨 왕국 수호 기사단</h3>
+                    <ul>
+                        <li>스칼렛：나카에 미츠키 (中恵 光城)</li>
+                        <li>데미아：칸다 미카 (神田 みか)</li>
+                        <li>클라우스 : 테라시마 타쿠마(寺島 拓篤)</li>
+                    </ul>
+                    <h3>블랙엣지</h3>
+                    <ul>
+                        <li>리히트：스즈키 료타 (鈴木 凌汰)</li>
+                        <li>리피네 ：난죠 요시노 (南條 </li>
+                        <li>탐 아즈라 즈카 : 타도코로 히나타(田所 陽向) </li>
+                    </ul>
+                    <div class="chap5_pop_list">
+                        <h3>그 외</h3>
+                        <ul>
+                            <li>엘 모리함 : 사쿠야 슌스케(咲野 俊介)</li>
+                            <li>테오 : 호리에 슌(堀江 瞬)</li>
+                            <li>도미닉스 ：오키아유 료타로 (置鮎 龍太郎)</li>
+                            <li>말두크：이토 켄타로 (伊藤 健太郎)</li>
+                            <li>카일 : 마츠카제 마사야(松風 雅也)</li>
+                            <li>마리아：나카무라 사쿠라 (中村 桜)</li>
+                            <li>로레인 : 히라야마 에미(平山 笑美)</li>
+                            <li>셀레네 : 나가츠마 쥬리(長妻 樹里)</li>
+                            <li>오펠리아 : 타나카 타카코(田中 貴子)</li>
+                            <li>제인 : 토요타 모에(豊田 萌絵)</li>
+                            <li>레이나 : 타카다 유우(高田 憂希)</li>
+                            <li>엘리제 : 이이다 리호(飯田 里穂)</li>
+                            <li>파벨 ：이노우에 유우키 (井上 雄貴)</li>
+                            <li>아자르 : 무라타 타이시(村田 太志)</li>
+                            <li>탐 : 사토 겐(佐藤 元)</li>
+                            <li>카울라 : 마츠모토 시노부(松本 忍)</li>
+                        </ul>
+                        <div class="chap5_pop_close_btn">
+                            <img src="images/btn_chap3_pop_close.png" alt="popup_close" />
+                        </div>
+                    </div>
+                    <div class="btn_chapter5_open">
+                        더보기<img src="images/btn_chapter5_open.png" alt="" />
+                    </div>
+                </div>
+            </div>
+            <!-- //chapter5 -->
+            <!-- chapter6 -->
+            <div class="chapter chapter6">
+                <h2>MUSIC</h2>
+                <div class="chap6_tab_wrap">
+                    <ul class="tabs_chap6">
+                        <li class="on" rel="tab1_chap6">OPENING</li>
+                        <li rel="tab2_chap6">ENDING</li>
+                    </ul>
+                </div>
+                <div class="tab_wrap tab1 tab_content_chap6" id="tab1_chap6">
+                    <p class="chap6_tit">
+                        opening Thema 1th
+                        <span>legendary future</span>
+                    </p>
+                    <div class="btn_chap6_play">
+                        음악듣기<img src="images/btn_chap6_play.png" alt="" />
+                    </div>
+                    <div class="chap6_bg">
+                        <div>
+                            <p>fripSide</p>
+                            <p>난죠 요시노 (南條 愛乃)</p>
+                            <p>야기누마 사토시 (八木沼 悟志)</p>
+                        </div>
+                    </div>
+                    <div class="chap6_m_info">
+                        <p>
+                            음악 스타일은 90년대 디지털 J-POP에 뿌리를 두고
+                            계승 발전해가고 있다.
+                            사실 디지털 J-POP이라는 용어는fripSide가 만들어낸
+                            용어로서 초기 globe,초기 Every Little Thing, favorite blue,
+                            m.o.v.e,T.M.Revolution 등 테크노/신디사이저 음색이
+                            많이 들어간 J-POP을 가리키는 것 같지만 그들이 활동하던
+                            90년대에는 쓰이지 않던 단어다.
+                        </p>
+                    </div>
+                </div>
+                <div class="tab_wrap tab2 tab_content_chap6" id="tab2_chap6">
+                    <p class="chap6_tit">
+                        opening Thema 1th
+                        <span>legendary future</span>
+                    </p>
+                    <div class="btn_chap6_play">
+                        음악듣기<img src="images/btn_chap6_play.png" alt="" />
+                    </div>
+                    <div class="chap6_bg">
+                        <div>
+                            <p>fripSide</p>
+                            <p>난죠 요시노 (南條 愛乃)</p>
+                            <p>야기누마 사토시 (八木沼 悟志)</p>
+                        </div>
+                    </div>
+                    <div class="chap6_m_info">
+                        <p>
+                            음악 스타일은 90년대 디지털 J-POP에 뿌리를 두고
+                            계승 발전해가고 있다.
+                            사실 디지털 J-POP이라는 용어는fripSide가 만들어낸
+                            용어로서 초기 globe,초기 Every Little Thing, favorite blue,
+                            m.o.v.e,T.M.Revolution 등 테크노/신디사이저 음색이
+                            많이 들어간 J-POP을 가리키는 것 같지만 그들이 활동하던
+                            90년대에는 쓰이지 않던 단어다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- chapter6 -->
+            <!-- chapter7 -->
+            <div class="chapter chapter7">
+                <div class="chapter7_logo"></div>
+                <div class="chapter7_tit1"></div>
+                <div class="chapter7_tit_sub">
+                    <p class="fs_1_25">1,500만이 열광한 그 스토리<br /><span>TV 애니메이션<br />킹스레이드 : 의지를 잇는 자들</span></p>
+                </div>
+                <div class="chap7_video_sub"></div>
+                <div class="chap7_video">
+                    <video data-keepplaying="" class="lazyVideo mainFullVideo" poster="https://d2mnoz07ua7r8n.cloudfront.net/resources/images/poster.jpg" autoplay="" muted="" loop="" playsinline="">
+                        <source class="" src="https://d2mnoz07ua7r8n.cloudfront.net/resources/images/main.mp4?v=01" type="video/mp4">
+                    </video>
+                </div>
+                <div class="chap7_video_sub_show">
+                    <div><img src="images/btn_chap1_sub_video_close.png" alt="영상닫기" /></div>
+                    <video data-keepplaying="" class="lazyVideo mainFullVideo" poster="https://d2mnoz07ua7r8n.cloudfront.net/resources/images/poster.jpg" autoplay="" muted="" loop="" playsinline="" style="width:100%;height:100%">
+                        <source class="" src="https://d2mnoz07ua7r8n.cloudfront.net/resources/images/main.mp4?v=01" type="video/mp4">
+                    </video>
+                </div>
+                <div class="chap7_appdown_btn">
+                    <ul>
+                        <li><a href="#" target="_blank"><img src="images/btn_chap7_appstore.png" alt="appstore" /></a></li>
+                        <li><a href="#" target="_blank"><img src="images/btn_chap7_googleplay.png" alt="googleplay" /></a></li>
+                    </ul>
+                </div>
+                <div id="mask_chap7"></div>
+            </div>
+            <!-- chapter7 -->
         </section>
+        <footer>
+            <div class="footer_wrap">
+                <address><img src="images/bg_footer.png" alt="vespa" />COPYRIGHT(C) 2020 VESPA INC, ALL RIGHTS RESERVED.</address>
+            </div>
+        </footer>
     </div>
     <!-- 공통 -->
     <script src="js/jquery.js"></script>
     <script src="js/skrollr.min.js"></script>
     <script src="js/ui.js"></script>
+    <script src="js/swiper.min.js"></script>
     <script type="text/javascript">
         console.log($(window).scrollTop());
         skrollr.init({
