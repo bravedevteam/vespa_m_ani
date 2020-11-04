@@ -132,14 +132,14 @@ header{position:fixed;background:black;height:3.5rem;width:100%;z-index:3;opacit
     display: none;
     
 }
-.chap3_pop_menu{width:100%;margin-top:5rem;}
+.chap3_pop_menu{width:100%;margin-top:5rem;overflow: hidden;}
 .chap3_pop_menu div:first-child{float:left;}
 .chap3_pop_menu div:first-child ul li{float:left;display:inline-block;cursor: pointer;text-indent:-99999px;width:36px;height:36px}
 .chap3_pop_menu div:first-child ul li:first-child{background:url('../images/img_chap3_pop_menu1.png') no-repeat;}
 .chap3_pop_menu div:first-child ul li:nth-child(2){background:url('../images/img_chap3_pop_menu2.png') no-repeat;margin:0 5px}
 .chap3_pop_menu div:first-child ul li:last-child{background:url('../images/img_chap3_pop_menu3.png') no-repeat;}
 .chap3_pop_menu div:last-child{float:right;}
-.chap3_pop_menu div:last-child select{border:1px solid #a1a5a8;color:#222;font-size:1rem;padding:7px 10px;width:7rem;
+.chap3_pop_menu div:last-child select{border:1px solid #a1a5a8;color:#222;font-size:1rem;padding:4px 10px;width:7rem;
 	-webkit-appearance:none;/*select 내부 스타일 제거 (화살표 제거)*/ 
 	-moz-appearance:none; 
 	-o-appearance:none; 
