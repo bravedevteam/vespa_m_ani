@@ -256,6 +256,10 @@ header{position:fixed;background:black;height:3.5rem;width:100%;z-index:3;opacit
 .chap6_m_info p:first-child{font-weight:bold;margin-bottom:1rem}
 .chap6_m_info p:nth-child(3) span{color:#717f8f}
 .chap6_m_info p:nth-child(4){margin-top:1rem}
+.chap6_m_info p:nth-child(3),.chap6_m_info p:nth-child(4){font-weight: lighter;}
+
+.music_info_text{font-weight:lighter;margin-top:1rem}
+.music_info_text span{font-weight: bold !important;}
 /* chapter6 */
 .chapter7{width:100%;position: relative;}
 .chapter7_logo,.chapter7_tit1,.chapter7_tit_sub,.chap7_video_sub,.chap7_detail{position: absolute;z-index:2;width:100%;}
