@@ -152,9 +152,8 @@ header{position:fixed;background:black;height:3.5rem;width:100%;z-index:3;opacit
 .chap3_pop_list dt span{display:table-cell;vertical-align:middle;color:#222;font-size:1.2rem;font-weight:bold;}
 .chap3_pop_list dl{border-bottom:1px solid #e7eaee;width:100%;margin-bottom:30px;cursor: pointer;overflow: hidden;}
 .chap3_pop_list dt{float:left;display:table;}
-.chap3_pop_list dd{float:left;color:#222;font-size:1rem;line-height:2rem;width:100%;margin-top:1rem;padding-bottom:2rem
-}
-.chap3_pop_list dd span{display:block;font-size:23px;margin-bottom:10px;margin-top:0px}
+.chap3_pop_list dd{float:left;color:#222;font-size:1rem;line-height:2rem;width:100%;margin-top:1rem;padding-bottom:2rem;height:0.5rem;white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.chap3_pop_list dd span{display:block;font-size:23px;margin-bottom:10px;margin-top:0px;}
 .chap3_pop_close_btn{position: absolute;top:20px;right:20px;cursor: pointer;}
 /* chapter3 */
 /* chapter4 */
