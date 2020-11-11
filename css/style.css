@@ -1,6 +1,6 @@
 #skrollr-body{width:100%}
 body{background:#f1f8ff}
-header{position:fixed;background:black;height:3.5rem;width:100%;z-index:3;opacity:0.7;}
+header{position:fixed;background:black;height:3.5rem;width:100%;z-index:1000;opacity:0.7;}
 .menu-trigger,
 .menu-trigger span {
 	display: inline-block;
@@ -162,10 +162,8 @@ header{position:fixed;background:black;height:3.5rem;width:100%;z-index:3;opacit
 .chap4_tab_wrap{clear: both;overflow: hidden;width:calc(100% - 3rem);padding:0 1.5rem}
 .swiper-slide div:first-child img,.tab_wrap .chap4_char_info div:last-child img{width:100%}
 .chap4_tab_wrap ul{width:100%;margin-top:2rem;}
-/*
 .chap4_tab_wrap ul li{text-align:center;display: inline-block;font-size:1.1rem;color:#b7c5d5;cursor: pointer;padding-bottom:10px;width:24%}
-*/
-.chap4_tab_wrap ul li{text-align:center;display: inline-block;font-size:1.1rem;color:#b7c5d5;cursor: pointer;padding-bottom:10px;width:33%}
+
 .chap4_tab_wrap ul li a{color:#b7c5d5;}
 .chap4_tab_wrap ul li a{position: relative;}
 .chap4_tab_wrap ul li a.on{color:#222;background-image: linear-gradient(transparent calc(100% - 2px), #1fd9de 2px);
@@ -177,7 +175,7 @@ header{position:fixed;background:black;height:3.5rem;width:100%;z-index:3;opacit
 .tab_wrap .chap4_char_info{clear: both;width:100%;letter-spacing:-1px;}
 .tab_wrap .chap4_char_info{width:calc(100% - 3rem);padding:0 1.5rem;margin-top:4rem}
 .tab_wrap .chap4_char_info h3{margin-bottom:2rem}
-.tab_wrap .chap4_char_info h3 img{height:1.9rem;}
+.tab_wrap .chap4_char_info h3 img{height:1.7rem;}
 .tab_wrap .chap4_char_info .chap4_char_info_voice{font-size:1.2rem}
 .tab_wrap .chap4_char_info .chap4_char_info_voice span{font-weight:bold;background:url('../images/bg_chap4_info_voice_line.png') right 7px no-repeat;padding-right:10px;margin-right:10px;}
 .tab_wrap .chap4_char_info div:last-child{margin-top:2rem;font-size:1rem;color:#222;line-height:2rem;letter-spacing:-1px;}
@@ -263,8 +261,8 @@ header{position:fixed;background:black;height:3.5rem;width:100%;z-index:3;opacit
 /* chapter6 */
 .chapter7{width:100%;position: relative;}
 .chapter7_logo,.chapter7_tit1,.chapter7_tit_sub,.chap7_video_sub,.chap7_detail{position: absolute;z-index:2;width:100%;}
-.chapter7_logo{height:7.85rem;background:url('../images/bg_logo.png') center top no-repeat;top:5rem;background-size:contain;}
-.chapter7_tit1{height:4.65rem;background:url('../images/img_chapter1_tit1.png') center top no-repeat;top:14rem;background-size:contain;}
+.chapter7_logo{height:7.85rem;background:url('../images/bg_logo7.png') center top no-repeat;top:5rem;background-size:contain;}
+.chapter7_tit1{height:4.65rem;background:url('../images/img_chapter7_tit1.png') center top no-repeat;top:14rem;background-size:contain;}
 .chap7_video video{object-fit:cover;width:100%;height:110vh;}
 .chap7_video::after{background:black;content:'';position: absolute;top:0;left:0;width:100%;opacity:.6;z-index:1;height:110vh;}
 .chapter7_tit_sub{color:white;top:19rem;text-align:center;}
@@ -303,19 +301,15 @@ address img{vertical-align: middle;margin-right:10px;width:3rem;}
     .chapter1_tit_sub{top:18rem;}
     .chap1_video_sub{height:5rem;top:25rem}
     .chap1_detail{height:7.5rem;top:30rem}
-    .chap4_tab_wrap ul li{font-size:1rem;letter-spacing:-2px;}
-    .chap4_tab_wrap ul li:nth-child(1){width:24%;text-align:center;}
-    .chap4_tab_wrap ul li:nth-child(2){width:50%;text-align:center;}
-    .chap4_tab_wrap ul li:nth-child(3){width:24%;text-align:center;}
-    /*
+    
     .chap4_tab_wrap ul li{width:50%;font-size:1.1rem;letter-spacing:-2px; text-align:left;float:left;}
     .chap4_tab_wrap ul li:nth-child(3){clear: both;margin-top:1rem}
     .chap4_tab_wrap ul li:nth-child(3){float:left;}
-    .chap4_tab_wrap ul li:nth-child(4){float:left;margin-top:1rem}*/
+    .chap4_tab_wrap ul li:nth-child(4){float:left;margin-top:1rem}
     .chap6_bg{background:url('../images/Untitled-1bg_chap6_musicplayer.png') no-repeat;width:100%;height:210px;background-size:contain;display:block;}
     .chap6_bg div{float:left;margin-left:1rem;margin-top:130px}
     .chapter7_logo{height:7.85rem;background:url('../images/bg_logo.png') center top no-repeat;top:6rem;background-size:contain;}
-    .chapter7_tit1{height:4.65rem;background:url('../images/img_chapter1_tit1.png') center top no-repeat;top:16rem;background-size:contain;}
+    .chapter7_tit1{height:4.65rem;background:url('../images/img_chapter7_tit1.png') center top no-repeat;top:16rem;background-size:contain;}
     .chapter7_tit_sub{color:white;top:23rem;text-align:center;}
     .chap7_video_sub{height:5rem;background:url('../images/btn_chap1_video_sub.png') center top no-repeat;background-size:contain;top:30rem;}
 }
@@ -325,35 +319,26 @@ address img{vertical-align: middle;margin-right:10px;width:3rem;}
     .chapter1_tit_sub{top:21rem;}
     .chap1_video_sub{height:5rem;top:28rem}
     .chap1_detail{height:7.5rem;top:33rem}
-    /*
     .chap4_tab_wrap ul li{font-size:0.9rem;letter-spacing:-2px;float:left;}
     .chap4_tab_wrap ul li:nth-child(1){text-align:left;width:15%;}
     .chap4_tab_wrap ul li:nth-child(2){width:45%;}
     .chap4_tab_wrap ul li:nth-child(3){width:20%;}
-    .chap4_tab_wrap ul li:nth-child(4){width:20%;}*/
-    .chap4_tab_wrap ul li{font-size:1rem;letter-spacing:-2px;}
-    .chap4_tab_wrap ul li:nth-child(1){width:24%;text-align:center;}
-    .chap4_tab_wrap ul li:nth-child(2){width:50%;text-align:center;}
-    .chap4_tab_wrap ul li:nth-child(3){width:24%;text-align:center;}
+    .chap4_tab_wrap ul li:nth-child(4){width:20%;}
     .chapter7_logo{height:7.85rem;background:url('../images/bg_logo.png') center top no-repeat;top:6rem;background-size:contain;}
-    .chapter7_tit1{height:4.65rem;background:url('../images/img_chapter1_tit1.png') center top no-repeat;top:16rem;background-size:contain;}
+    .chapter7_tit1{height:4.65rem;background:url('../images/img_chapter7_tit1.png') center top no-repeat;top:16rem;background-size:contain;}
     .chapter7_tit_sub{color:white;top:23rem;text-align:center;}
     .chap7_video_sub{height:5rem;background:url('../images/btn_chap1_video_sub.png') center top no-repeat;background-size:contain;top:30rem;}
 }
 @media only screen and (min-device-width : 411px) and (max-device-width : 425px) { 
-    /*.chap4_tab_wrap ul li{font-size:1rem;letter-spacing:-2px;float:left;}
+    .chap4_tab_wrap ul li{font-size:1rem;letter-spacing:-2px;float:left;}
     .chap4_tab_wrap ul li:nth-child(1){text-align:left;width:15%;}
     .chap4_tab_wrap ul li:nth-child(2){width:45%;}
     .chap4_tab_wrap ul li:nth-child(3){width:20%;}
-    .chap4_tab_wrap ul li:nth-child(4){width:20%;}*/
-    .chap4_tab_wrap ul li{font-size:1.1rem;letter-spacing:-2px;}
-    .chap4_tab_wrap ul li:nth-child(1){width:24%;text-align:center;}
-    .chap4_tab_wrap ul li:nth-child(2){width:50%;text-align:center;}
-    .chap4_tab_wrap ul li:nth-child(3){width:24%;text-align:center;}
+    .chap4_tab_wrap ul li:nth-child(4){width:20%;}
     .chap6_bg{background:url('../images/Untitled-1bg_chap6_musicplayer.png') no-repeat;width:100%;height:250px;background-size:contain;display:block;}
     .chap6_bg div{float:left;margin-left:1rem;margin-top:170px}
     .chapter7_logo{height:7.85rem;background:url('../images/bg_logo.png') center top no-repeat;top:7rem;background-size:contain;}
-    .chapter7_tit1{height:4.65rem;background:url('../images/img_chapter1_tit1.png') center top no-repeat;top:17rem;background-size:contain;}
+    .chapter7_tit1{height:4.65rem;background:url('../images/img_chapter7_tit1.png') center top no-repeat;top:17rem;background-size:contain;}
     .chapter7_tit_sub{color:white;top:24rem;text-align:center;}
     .chap7_video_sub{height:5rem;background:url('../images/btn_chap1_video_sub.png') center top no-repeat;background-size:contain;top:33rem;}
     .chap7_appdown_btn{text-align:center;width:calc(100% - 3rem);padding:0 1.5rem;position: absolute;bottom:7rem}
@@ -373,7 +358,7 @@ address img{vertical-align: middle;margin-right:10px;width:3rem;}
     .chap6_bg div{float:left;margin-left:1rem;margin-top:410px}
 
     .chapter7_logo{height:7.85rem;background:url('../images/bg_logo.png') center top no-repeat;top:9rem;background-size:contain;}
-    .chapter7_tit1{height:4.65rem;background:url('../images/img_chapter1_tit1.png') center top no-repeat;top:19rem;background-size:contain;}
+    .chapter7_tit1{height:4.65rem;background:url('../images/img_chapter7_tit1.png') center top no-repeat;top:19rem;background-size:contain;}
     .chapter7_tit_sub{color:white;top:27rem;text-align:center;}
     .chapter7_tit_sub p{line-height:3.4rem;}
     .chap7_video_sub{height:5rem;background:url('../images/btn_chap1_video_sub.png') center top no-repeat;background-size:contain;top:42rem;}
