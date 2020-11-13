@@ -121,8 +121,8 @@ header{position:fixed;background:black;height:3.5rem;width:100%;z-index:1000;opa
 .chap3_table table tr:nth-child(even){background:#e6f0f9;}
 .chap3_bg{float:left;margin-left:20px}
 .chap3_bg::after{content:'';position: absolute;}
-.btn_chapter3_table_open{text-align:center;margin-top:1.5rem;}
-.btn_chapter3_table_open img{width:30px}
+.btn_chapter3_table_open,.btn_chapter3_table_close{text-align:center;margin-top:1.5rem;}
+.btn_chapter3_table_open img,.btn_chapter3_table_close img{width:30px}
 .chap3_pop{
 	background:white;
 	margin:0 auto;

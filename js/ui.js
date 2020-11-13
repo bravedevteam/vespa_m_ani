@@ -114,7 +114,14 @@ $(document).ready(function(){
     })
     
     $('.btn_chapter3_table_open').click(function(){
-        $('.table_visible').slideDown();
+        $('.table_visible').show();
+        $('.btn_chapter3_table_close').show();
+        $('.btn_chapter3_table_open').hide();
+    })
+    $('.btn_chapter3_table_close').click(function(){
+        $('.table_visible').hide();
+        $('.btn_chapter3_table_close').hide();
+        $('.btn_chapter3_table_open').show();
     })
     
     $('.chap3_tit_on').click(function(){
