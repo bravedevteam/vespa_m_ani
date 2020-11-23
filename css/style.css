@@ -32,8 +32,15 @@ header{position:fixed;background:black;height:3.5rem;width:100%;z-index:1000;opa
 	bottom:0;
 }
 /* 햄버거 메뉴 */
-#mask,#mask_chap1,#mask_chap7 {  
+#mask,#mask_chap1,#mask_chap7{  
 	position:absolute;  
+	left:0;
+	top:0;
+	z-index:900;  
+	background-color:#000;  
+}
+#mask_chap6,#mask_chap61{
+    position: fixed;  
 	left:0;
 	top:0;
 	z-index:900;  
@@ -262,6 +269,13 @@ header{position:fixed;background:black;height:3.5rem;width:100%;z-index:1000;opa
 
 .music_info_text{font-weight:lighter;margin-top:1rem}
 .music_info_text span{font-weight: bold !important;}
+
+.chap6_video_sub_show{width:80%;position: absolute;z-index:9999;display:none;top:25%;left:10%}
+.chap6_video_sub_show div{float:right;cursor: pointer;margin-bottom:10px;transition: all ease 1s;}
+.chap6_video_sub_show div img{width:70%}
+.chap6_video_sub_show1{width:80%;position: absolute;z-index:9999;display:none;top:20%;left:10%}
+.chap6_video_sub_show1 div{float:right;cursor: pointer;margin-bottom:10px;transition: all ease 1s;}
+.chap6_video_sub_show1 div img{width:70%}
 /* chapter6 */
 .chapter7{width:100%;position: relative;}
 .chapter7_logo,.chapter7_tit1,.chapter7_tit_sub,.chap7_video_sub,.chap7_detail{position: absolute;z-index:2;width:100%;}

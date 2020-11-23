@@ -27,6 +27,14 @@ $(document).ready(function(){
         $('#mask_chap1').css('width','100%').css('height','100vh');
         $('#mask_chap1').fadeTo("fast",.8);    
     }
+    function chap6(){
+        $('#mask_chap6').css('width','100%').css('height','100vh');
+        $('#mask_chap6').fadeTo("fast",.8);    
+    }
+    function chap61(){
+        $('#mask_chap61').css('width','100%').css('height','100vh');
+        $('#mask_chap61').fadeTo("fast",.8);    
+    }
     function chap7(){
         $('#mask_chap7').css('width','100%').css('height','110vh');
         $('#mask_chap7').fadeTo("fast",.8);    
@@ -207,5 +215,26 @@ $(document).ready(function(){
                 $('.chap7_video_sub_show').hide();
             })
         });
+    })
+
+    $('#tab1_chap6 .btn_chap6_play img').click(function(){
+        $('.chap6_video_sub_show').show();
+        $('#mask_chap6').show(function(){
+            chap6();
+            $('#mask_chap6, .chap6_video_sub_show div').click(function(){
+                $('#mask_chap6').hide();
+                $('.chap6_video_sub_show').hide();
+            })
+        })
+    })
+    $('#tab2_chap6 .btn_chap6_play img').click(function(){
+        $('.chap6_video_sub_show1').show();
+        $('#mask_chap61').show(function(){
+            chap61();
+            $('#mask_chap61, .chap6_video_sub_show1 div').click(function(){
+                $('#mask_chap61').hide();
+                $('.chap6_video_sub_show1').hide();
+            })
+        })
     })
 })
